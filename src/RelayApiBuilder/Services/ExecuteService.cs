@@ -17,7 +17,7 @@ namespace NetExtensions.Services
             Options = options;
         }
 
-        private async Task<Option<ResourceResponse>> GetResourceResponse(object data)
+        protected async Task<Option<ResourceResponse>> GetResourceResponse(object data)
         {
             var json = JsonConvert.SerializeObject(data);
             var md5Hash = json.GetMd5Hash();
