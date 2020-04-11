@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>NetExtensions</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>NetExtensions RelayApiBuilder</Title>
+    <Description>RelayApiBuilder</Description>
+    <PackageProjectUrl>https://github.com/netextensions/RelayApiBuilder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/netextensions/RelayApiBuilder</RepositoryUrl>
+    <PackageTags>RelayApiBuilder, mock api,.net core</PackageTags>
+    <PackageId>NetExtensions.RelayApiBuilder</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>netextensions.io</Authors>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LanguageExt.Core" Version="3.4.13" />
+    <PackageReference Include="NetExtensions.ServiceHostBuilder" Version="1.0.0" />
+    <PackageReference Include="NetExtensions.Extensions.SQLite.InMemoryDb" Version="1.0.1" />
+    <PackageReference Include="NetExtensions.Extensions.Hash" Version="1.0.1" />
+    <PackageReference Include="NetExtensions.Extensions.SwashbuckleWithOauth" Version="1.0.0" />
+    <PackageReference Include="NetExtensions.Extensions.SerilogApplicationBuilder" Version="1.0.0" />
+  </ItemGroup>
+</Project>
